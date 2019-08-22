@@ -1,6 +1,8 @@
 
 export default {
   mode: 'spa',
+  mode: 'universal',
+  srcDir: 'app',
   /*
   ** Headers of the page
   */
@@ -40,7 +42,12 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios'
   ],
+  axios: {
+    // baseURL: ''
+    // See https://github.com/nuxt-community/axios-module#options
+  },
   /*
   ** Build configuration
   */
